@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #4C2816;
+  --color-bg: #77B9B2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: var(--color-bg);
+}
+
+/* Font assignments */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-montserrat-alternates);
+}
+
+.logo-text {
+  font-family: var(--font-pacifico);
+
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn-custom-rounded {
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
