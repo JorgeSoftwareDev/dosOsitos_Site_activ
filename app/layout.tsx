@@ -1,10 +1,21 @@
 import "./globals.css";
 import { RootLayoutProps } from "@/app/types";
 import { Albert_Sans, Montserrat_Alternates, Pacifico } from "next/font/google";
+import StructuredData from "./components/StructuredData";
+import Script from "next/script";
 
-export const metadata = {
-  title: "Dos Ositos Bakery",
-  description: "Gourmet cookies and treats at reasonable prices",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://dosositosbakery.com"),
+  title: {
+    default: "Dos Ositos Bakery",
+    template: "%s | Dos Ositos Bakery",
+  },
+  description: "Cookies & Bars baked with Amor.",
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: "/Cookie.ico",
   },
@@ -33,6 +44,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <head>
+        <StructuredData />
         <script src="https://analytics.ahrefs.com/analytics.js" data-key="qguzFqKsr/bQ7rCXtKTTVg" async></script>
       </head>
       <body
