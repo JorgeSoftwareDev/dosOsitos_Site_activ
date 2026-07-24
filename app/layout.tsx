@@ -3,15 +3,11 @@ import { RootLayoutProps } from "@/app/types";
 import { Albert_Sans, Montserrat_Alternates, Pacifico } from "next/font/google";
 import StructuredData from "./components/StructuredData";
 import Script from "next/script";
-
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata = {
   metadataBase: new URL("https://dosositosbakery.com"),
-  title: {
-    default: "Dos Ositos Bakery",
-    template: "%s | Dos Ositos Bakery",
-  },
+  title: "Dos Ositos Bakery",
   description: "Cookies & Bars baked with Amor.",
   alternates: {
     canonical: "/",
