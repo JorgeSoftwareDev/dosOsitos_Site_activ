@@ -32,6 +32,9 @@ const pacifico = Pacifico({
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
+      <head>
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="qguzFqKsr/bQ7rCXtKTTVg" async></script>
+      </head>
       <body
         className={`min-h-screen ${albertSans.className} ${montserratAlternates.variable} ${pacifico.variable}`}
       >
